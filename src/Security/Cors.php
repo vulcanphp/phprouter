@@ -6,7 +6,7 @@ use PhpScript\PhpRouter\Http\Request;
 use PhpScript\PhpRouter\Http\Response;
 use PhpScript\PhpRouter\Security\Interfaces\IMiddleware;
 
-class Cros implements IMiddleware
+class Cors implements IMiddleware
 {
     protected array $allowed = [];
 
