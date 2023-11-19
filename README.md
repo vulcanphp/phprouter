@@ -7,8 +7,6 @@ It's recommended that you use [Composer](https://getcomposer.org/) to install PH
 
 ```bash
 $ composer require php-script/php-router
-# or
-$ composer dump-autoload
 ```
 
 ## Basic Usage
