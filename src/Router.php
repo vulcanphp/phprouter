@@ -32,7 +32,7 @@ class Router
     public static Router $instance;
     public Request $request;
     public Response $response;
-    public callable $fallback;
+    public $fallback;
 
     /** 
      * Router Filter
@@ -106,6 +106,11 @@ class Router
             }
         }
 
+        // call fallback
+        if (isset($this->fallback) && CallbackHandler::exists($this->fallback)) {
+            CallbackHandler::load($this->fallback);
+        }
+
         // not found any route for this path
         throw new NotFoundException('the route does not matched..');
     }
@@ -163,11 +168,6 @@ class Router
 
                 return $route->setUrl(new Url(trim($this->request->rootUrl()->absoluteUrl(), '/') . $route->getPath()));
             }
-        }
-
-        // call fallback
-        if (isset($this->fallback) && CallbackHandler::exists($this->fallback)) {
-            CallbackHandler::load($this->fallback);
         }
 
         // not found any route for this path
