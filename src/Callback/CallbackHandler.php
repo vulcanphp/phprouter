@@ -7,7 +7,7 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionFunction;
 use ReflectionNamedType;
-use PhpScript\PhpRouter\Callback\Exceptions\UndefineClass;
+use PhpScript\PhpRouter\Callback\Exceptions\UndefinedClass;
 use PhpScript\PhpRouter\Callback\Exceptions\UndefinedMethod;
 
 class CallbackHandler
@@ -83,7 +83,7 @@ class CallbackHandler
     public static function create(string $class, ...$args)
     {
         if (!class_exists($class)) {
-            throw new UndefineClass('Class: ' . $class . ' does not exists');
+            throw new UndefinedClass('Class: ' . $class . ' does not exists');
         }
 
         return new $class(...array_values($args));
