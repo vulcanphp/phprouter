@@ -1,4 +1,4 @@
-# php-router
+# PHP Router
 PHP Router is a powerful, secure, simple, and quick routing system for PHP Application or REST APIs
 
 ## Installation
@@ -18,11 +18,15 @@ After Installing PHP Router initialize it in your application then you can simpl
 <?php
 
 use PhpScript\PhpRouter\Router;
+use PhpScript\PhpRouter\Route;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 // initialize PHP Router
 $router = Router::init();
+
+// set default middleware to router
+$router->setMiddlewares([Csrf::class]);
 
 /**
  * methods: get, post, put, patch, delete, options
@@ -61,7 +65,7 @@ Route::redirect('/here', '/there', 301);
 Route::view('/docs', 'docs');
 
 // add a route with a specific regex
-Route::regex('/(.+)', 'get', fn($slug) => var_dump($slug));
+Route::regex('%^/(.+)$%', 'get', fn($slug) => var_dump($slug));
 
 // set a fallback to this router
 $router->setFallback(function() {
@@ -168,4 +172,108 @@ Route::get('/user/{id}', function(User $user){
 });
 
 // ...
+```
+
+## Example Middleware
+
+```php
+<?php
+
+namespace MyApp\Middlewares;
+
+use PhpScript\PhpRouter\Http\Request;
+use PhpScript\PhpRouter\Http\Response;
+use PhpScript\PhpRouter\Security\Interfaces\IMiddleware;
+
+class MyMiddleware implements IMiddleware
+{
+    public function handle(Request $request, Response $response): void
+    {
+        // do whatever ..
+    }
+}
+```
+
+## Example Csrf Verified
+
+```php
+<?php
+
+namespace MyApp\Middlewares;
+
+use PhpScript\PhpRouter\Security\BaseCsrfVerifier as IMiddleware;
+use PhpScript\PhpRouter\Security\Token\SessionTokenProvider as TokenProvider;
+
+class Csrf extends IMiddleware
+{
+    /**
+     * CSRF validation will be ignored on the following urls.
+     */
+    protected $except = ['/api/*'];
+
+    public function __construct()
+    {
+        $this->setTokenProvider(new TokenProvider);
+    }
+}
+
+```
+
+## Example Resource Controller
+
+```php
+<?php
+
+namespace MyApp\Controller;
+
+use PhpScript\PhpRouter\Http\Request;
+use PhpScript\PhpRouter\Http\Response;
+use PhpScript\PhpRouter\Routing\Interfaces\IResource;
+
+class MyResourceController implements IResource
+{
+    public Request $request;
+    public Response $response;
+
+    public function __construct(Request $request, Response $response)
+    {
+        $this->request = $request;
+        $this->response = $response;
+    }
+
+    public function index()
+    {
+        // code ..
+    }
+
+    public function show($id)
+    {
+        // code ..
+    }
+
+    public function store()
+    {
+        // code ..
+    }
+
+    public function create()
+    {
+        // code ..
+    }
+
+    public function edit($id)
+    {
+        // code ..
+    }
+
+    public function update($id)
+    {
+        // code ..
+    }
+
+    public function destroy($id)
+    {
+        // code ..
+    }
+}
 ```
