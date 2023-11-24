@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpScript\PhpRouter\Security;
+namespace VulcanPhp\PhpRouter\Security;
 
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
-use PhpScript\PhpRouter\Security\Interfaces\IMiddleware;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Security\Interfaces\IMiddleware;
 
 class Cors implements IMiddleware
 {

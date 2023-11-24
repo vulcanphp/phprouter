@@ -1,10 +1,10 @@
 {
-    "name": "php-script/php-router",
+    "name": "vulcanphp/phprouter",
     "description": "PHP Router is a powerful, secure, simple, and quick routing system for PHP Application or REST APIs",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PhpScript\\PhpRouter\\": "src/"
+            "VulcanPhp\\PhpRouter\\": "src/"
         }
     },
     "authors": [

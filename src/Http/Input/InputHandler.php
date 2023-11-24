@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http\Input;
+namespace VulcanPhp\PhpRouter\Http\Input;
 
-use PhpScript\PhpRouter\Callback\UniversalCall;
-use PhpScript\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Http\Request;
 
 class InputHandler
 {

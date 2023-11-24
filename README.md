@@ -6,7 +6,7 @@ PHP Router is a powerful, secure, simple, and quick routing system for PHP Appli
 It's recommended that you use [Composer](https://getcomposer.org/) to install PHP Router
 
 ```bash
-$ composer require php-script/php-router
+$ composer require vulcanphp/phprouter
 ```
 
 ## Basic Usage
@@ -15,8 +15,8 @@ After Installing PHP Router initialize it in your application then you can simpl
 ```php
 <?php
 
-use PhpScript\PhpRouter\Router;
-use PhpScript\PhpRouter\Route;
+use VulcanPhp\PhpRouter\Router;
+use VulcanPhp\PhpRouter\Route;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -59,7 +59,7 @@ Route::resource('book', Book::class);
 // add a redirect route with http code: 301
 Route::redirect('/here', '/there', 301);
 
-// if your application has a view() function for php-script/sweet-view then you can simply add a view route
+// if your application has a view() function for vulcanphp/sweet-view then you can simply add a view route
 Route::view('/docs', 'docs');
 
 // add a route with a specific regex
@@ -80,7 +80,7 @@ echo $router->resolve();
 ```php
 <?php
 
-use PhpScript\PhpRouter\Route;
+use VulcanPhp\PhpRouter\Route;
 
 // add a simple router group
 Route::group(['prefix' => 'user'], function(){
@@ -122,11 +122,11 @@ Route::group(['prefix' => 'admin'], function(){
 ```php
 <?php
 
-use PhpScript\PhpRouter\Router;
-use PhpScript\PhpRouter\Route;
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
-use PhpScript\PhpRouter\Http\Input\InputHandler;
+use VulcanPhp\PhpRouter\Router;
+use VulcanPhp\PhpRouter\Route;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Http\Input\InputHandler;
 
 /** 
  * usage of reflection parameters
@@ -179,9 +179,9 @@ Route::get('/user/{id}', function(User $user){
 
 namespace MyApp\Middlewares;
 
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
-use PhpScript\PhpRouter\Security\Interfaces\IMiddleware;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Security\Interfaces\IMiddleware;
 
 class MyMiddleware implements IMiddleware
 {
@@ -199,8 +199,8 @@ class MyMiddleware implements IMiddleware
 
 namespace MyApp\Middlewares;
 
-use PhpScript\PhpRouter\Security\BaseCsrfVerifier as IMiddleware;
-use PhpScript\PhpRouter\Security\Token\SessionTokenProvider as TokenProvider;
+use VulcanPhp\PhpRouter\Security\BaseCsrfVerifier as IMiddleware;
+use VulcanPhp\PhpRouter\Security\Token\SessionTokenProvider as TokenProvider;
 
 class Csrf extends IMiddleware
 {
@@ -224,9 +224,9 @@ class Csrf extends IMiddleware
 
 namespace MyApp\Controller;
 
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
-use PhpScript\PhpRouter\Routing\Interfaces\IResource;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Routing\Interfaces\IResource;
 
 class MyResourceController implements IResource
 {

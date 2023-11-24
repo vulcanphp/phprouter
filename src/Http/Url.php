@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http;
+namespace VulcanPhp\PhpRouter\Http;
 
 use JsonSerializable;
-use PhpScript\PhpRouter\Callback\UniversalCall;
-use PhpScript\PhpRouter\Http\Exceptions\MalformedUrlException;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Http\Exceptions\MalformedUrlException;
 
 class Url implements JsonSerializable
 {

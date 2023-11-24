@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing\Exceptions;
+namespace VulcanPhp\PhpRouter\Routing\Exceptions;
 
 use Exception;
 

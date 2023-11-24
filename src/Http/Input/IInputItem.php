@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http\Input;
+namespace VulcanPhp\PhpRouter\Http\Input;
 
 interface IInputItem
 {

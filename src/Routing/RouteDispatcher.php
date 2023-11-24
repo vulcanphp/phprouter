@@ -1,16 +1,16 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing;
+namespace VulcanPhp\PhpRouter\Routing;
 
-use PhpScript\PhpRouter\Callback\CallbackHandler;
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Routing\IRoute;
-use PhpScript\PhpRouter\Router;
-use PhpScript\PhpRouter\Routing\Exceptions\RouterException;
-use PhpScript\PhpRouter\Routing\Interfaces\IResource;
-use PhpScript\PhpRouter\Routing\ResourceRoute;
-use PhpScript\PhpRouter\Security\Exceptions\MiddlewareException;
-use PhpScript\PhpRouter\Security\Interfaces\IMiddleware;
+use VulcanPhp\PhpRouter\Callback\CallbackHandler;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Routing\IRoute;
+use VulcanPhp\PhpRouter\Router;
+use VulcanPhp\PhpRouter\Routing\Exceptions\RouterException;
+use VulcanPhp\PhpRouter\Routing\Interfaces\IResource;
+use VulcanPhp\PhpRouter\Routing\ResourceRoute;
+use VulcanPhp\PhpRouter\Security\Exceptions\MiddlewareException;
+use VulcanPhp\PhpRouter\Security\Interfaces\IMiddleware;
 
 class RouteDispatcher
 {

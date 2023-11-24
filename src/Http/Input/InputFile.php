@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http\Input;
+namespace VulcanPhp\PhpRouter\Http\Input;
 
-use PhpScript\PhpRouter\Callback\UniversalCall;
-use PhpScript\PhpRouter\Http\Exceptions\InvalidArgumentException;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Http\Exceptions\InvalidArgumentException;
 
 class InputFile implements IInputItem
 {

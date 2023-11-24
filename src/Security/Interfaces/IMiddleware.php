@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpScript\PhpRouter\Security\Interfaces;
+namespace VulcanPhp\PhpRouter\Security\Interfaces;
 
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
 
 interface IMiddleware
 {

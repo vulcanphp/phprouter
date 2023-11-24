@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing;
+namespace VulcanPhp\PhpRouter\Routing;
 
-use PhpScript\PhpRouter\Router;
+use VulcanPhp\PhpRouter\Router;
 
 trait RouteCollection
 {

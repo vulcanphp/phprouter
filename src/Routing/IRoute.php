@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing;
+namespace VulcanPhp\PhpRouter\Routing;
 
-use PhpScript\PhpRouter\Callback\UniversalCall;
-use PhpScript\PhpRouter\Http\Url;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Http\Url;
 
 abstract class IRoute
 {

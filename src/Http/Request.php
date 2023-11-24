@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http;
+namespace VulcanPhp\PhpRouter\Http;
 
-use PhpScript\PhpRouter\Callback\UniversalCall;
-use PhpScript\PhpRouter\Security\BaseCsrfVerifier;
-use PhpScript\PhpRouter\Http\Input\InputHandler;
-use PhpScript\PhpRouter\Routing\IRoute;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Security\BaseCsrfVerifier;
+use VulcanPhp\PhpRouter\Http\Input\InputHandler;
+use VulcanPhp\PhpRouter\Routing\IRoute;
 
 class Request
 {

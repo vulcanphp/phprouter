@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpScript\PhpRouter\Security\Token;
+namespace VulcanPhp\PhpRouter\Security\Token;
 
 use Exception;
-use PhpScript\PhpRouter\Security\Exceptions\SecurityException;
-use PhpScript\PhpRouter\Security\Interfaces\ITokenProvider;
+use VulcanPhp\PhpRouter\Security\Exceptions\SecurityException;
+use VulcanPhp\PhpRouter\Security\Interfaces\ITokenProvider;
 
 class SessionTokenProvider implements ITokenProvider
 {

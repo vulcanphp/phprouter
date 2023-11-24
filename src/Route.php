@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpScript\PhpRouter;
+namespace VulcanPhp\PhpRouter;
 
-use PhpScript\PhpRouter\Routing\Exceptions\RouterException;
-use PhpScript\PhpRouter\Routing\GroupedRoute;
-use PhpScript\PhpRouter\Routing\ResourceRoute;
-use PhpScript\PhpRouter\Routing\GeneralRoute;
+use VulcanPhp\PhpRouter\Routing\Exceptions\RouterException;
+use VulcanPhp\PhpRouter\Routing\GroupedRoute;
+use VulcanPhp\PhpRouter\Routing\ResourceRoute;
+use VulcanPhp\PhpRouter\Routing\GeneralRoute;
 
 class Route
 {

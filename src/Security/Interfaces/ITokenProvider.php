@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpScript\PhpRouter\Security\Interfaces;
+namespace VulcanPhp\PhpRouter\Security\Interfaces;
 
 interface ITokenProvider
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace PhpScript\PhpRouter\Callback;
+namespace VulcanPhp\PhpRouter\Callback;
 
 use Closure;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionFunction;
 use ReflectionNamedType;
-use PhpScript\PhpRouter\Callback\Exceptions\UndefinedClass;
-use PhpScript\PhpRouter\Callback\Exceptions\UndefinedMethod;
+use VulcanPhp\PhpRouter\Callback\Exceptions\UndefinedClass;
+use VulcanPhp\PhpRouter\Callback\Exceptions\UndefinedMethod;
 
 class CallbackHandler
 {

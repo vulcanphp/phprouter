@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing;
+namespace VulcanPhp\PhpRouter\Routing;
 
-use PhpScript\PhpRouter\Callback\CallbackHandler;
-use PhpScript\PhpRouter\Callback\UniversalCall;
-use PhpScript\PhpRouter\Routing\Exceptions\RouterException;
+use VulcanPhp\PhpRouter\Callback\CallbackHandler;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Routing\Exceptions\RouterException;
 
 class GroupedRoute
 {

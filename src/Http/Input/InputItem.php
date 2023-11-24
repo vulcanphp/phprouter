@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http\Input;
+namespace VulcanPhp\PhpRouter\Http\Input;
 
 use ArrayAccess;
 use ArrayIterator;
 use IteratorAggregate;
-use PhpScript\PhpRouter\Callback\UniversalCall;
+use VulcanPhp\PhpRouter\Callback\UniversalCall;
 
 class InputItem implements ArrayAccess, IInputItem, IteratorAggregate
 {

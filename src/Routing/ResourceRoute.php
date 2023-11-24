@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing;
+namespace VulcanPhp\PhpRouter\Routing;
 
-use PhpScript\PhpRouter\Routing\IRoute;
+use VulcanPhp\PhpRouter\Routing\IRoute;
 
 class ResourceRoute extends IRoute
 {

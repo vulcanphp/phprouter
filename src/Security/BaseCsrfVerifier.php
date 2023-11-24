@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpScript\PhpRouter\Security;
+namespace VulcanPhp\PhpRouter\Security;
 
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
-use PhpScript\PhpRouter\Security\Exceptions\TokenMismatchException;
-use PhpScript\PhpRouter\Security\Interfaces\IMiddleware;
-use PhpScript\PhpRouter\Security\Interfaces\ITokenProvider;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Security\Exceptions\TokenMismatchException;
+use VulcanPhp\PhpRouter\Security\Interfaces\IMiddleware;
+use VulcanPhp\PhpRouter\Security\Interfaces\ITokenProvider;
 
 class BaseCsrfVerifier implements IMiddleware
 {

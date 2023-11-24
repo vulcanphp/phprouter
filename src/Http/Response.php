@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpScript\PhpRouter\Http;
+namespace VulcanPhp\PhpRouter\Http;
 
 use JsonSerializable;
-use PhpScript\PhpRouter\Http\Exceptions\InvalidArgumentException;
-use PhpScript\PhpRouter\Router;
+use VulcanPhp\PhpRouter\Http\Exceptions\InvalidArgumentException;
+use VulcanPhp\PhpRouter\Router;
 
 class Response
 {

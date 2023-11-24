@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpScript\PhpRouter\Routing\Interfaces;
+namespace VulcanPhp\PhpRouter\Routing\Interfaces;
 
 interface IResource
 {

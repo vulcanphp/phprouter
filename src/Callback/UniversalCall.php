@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpScript\PhpRouter\Callback;
+namespace VulcanPhp\PhpRouter\Callback;
 
-use PhpScript\PhpRouter\Callback\Exceptions\UndefinedMethod;
+use VulcanPhp\PhpRouter\Callback\Exceptions\UndefinedMethod;
 
 trait UniversalCall
 {

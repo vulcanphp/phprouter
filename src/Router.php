@@ -1,27 +1,27 @@
 <?php
 
-namespace PhpScript\PhpRouter;
+namespace VulcanPhp\PhpRouter;
 
-use PhpScript\PhpRouter\Callback\CallbackHandler;
-use PhpScript\PhpRouter\Http\Url;
-use PhpScript\PhpRouter\Http\Request;
-use PhpScript\PhpRouter\Http\Response;
-use PhpScript\PhpRouter\Routing\IRoute;
-use PhpScript\PhpRouter\Routing\Exceptions\NotFoundException;
-use PhpScript\PhpRouter\Routing\Exceptions\RouterException;
-use PhpScript\PhpRouter\Routing\Exceptions\UnsupportedMethodException;
-use PhpScript\PhpRouter\Routing\ResourceRoute;
-use PhpScript\PhpRouter\Routing\RouteDispatcher;
-use PhpScript\PhpRouter\Security\BaseCsrfVerifier;
-use PhpScript\PhpRouter\Security\Exceptions\MiddlewareException;
+use VulcanPhp\PhpRouter\Callback\CallbackHandler;
+use VulcanPhp\PhpRouter\Http\Url;
+use VulcanPhp\PhpRouter\Http\Request;
+use VulcanPhp\PhpRouter\Http\Response;
+use VulcanPhp\PhpRouter\Routing\IRoute;
+use VulcanPhp\PhpRouter\Routing\Exceptions\NotFoundException;
+use VulcanPhp\PhpRouter\Routing\Exceptions\RouterException;
+use VulcanPhp\PhpRouter\Routing\Exceptions\UnsupportedMethodException;
+use VulcanPhp\PhpRouter\Routing\ResourceRoute;
+use VulcanPhp\PhpRouter\Routing\RouteDispatcher;
+use VulcanPhp\PhpRouter\Security\BaseCsrfVerifier;
+use VulcanPhp\PhpRouter\Security\Exceptions\MiddlewareException;
 
 /**
  * PHP Router is a secure, simple, and quick routing system for php application
  * 
  * @author Shahin Moyshan
  * @version 1.0
- * @link https://github.com/php-script/php-router
- * @package PhpScript\PhpRouter
+ * @link https://github.com/vulcanphp/phprouter
+ * @package VulcanPhp\PhpRouter
  */
 class Router
 {
