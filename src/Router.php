@@ -196,7 +196,7 @@ class Router
         return $this;
     }
 
-    public function setFallback(callable $callback): self
+    public function setFallback($callback): self
     {
         $this->fallback = $callback;
         return $this;
@@ -207,7 +207,7 @@ class Router
         return $this->filters[$filter] ?? [];
     }
 
-    public function setFilters(int $filter, callable $callback): self
+    public function setFilters(int $filter, $callback): self
     {
         if (!isset($this->filters[$filter])) {
             $this->filters[$filter] = [];
